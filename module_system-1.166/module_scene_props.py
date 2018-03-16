@@ -396,7 +396,7 @@ scene_props = [
             (eq, "$g_number_of_targets_destroyed", 0),        
             (store_mul, ":target_no_mul_scene_prop_team", ":scene_prop_team_no_multiplier", 1), #1 means destroyed object is a catapult
             #for only server itself-----------------------------------------------------------------------------------------------                                                                                                      
-            (call_script, "script_show_multiplayer_message", multiplayer_message_type_target_destroyed, ":target_no_mul_scene_prop_team"), 
+            #(call_script, "script_show_multiplayer_message", multiplayer_message_type_target_destroyed, ":target_no_mul_scene_prop_team"),
             #for only server itself-----------------------------------------------------------------------------------------------     
             (get_max_players, ":num_players"),                               
             (try_for_range, ":player_no", 1, ":num_players"),
@@ -407,7 +407,7 @@ scene_props = [
           (else_try),
             (store_mul, ":target_no_mul_scene_prop_team", ":scene_prop_team_no_multiplier", 9), #9 means attackers destroyed all targets
             #for only server itself-----------------------------------------------------------------------------------------------      
-            (call_script, "script_show_multiplayer_message", multiplayer_message_type_target_destroyed, ":target_no_mul_scene_prop_team"), 
+            #(call_script, "script_show_multiplayer_message", multiplayer_message_type_target_destroyed, ":target_no_mul_scene_prop_team"),
             #for only server itself-----------------------------------------------------------------------------------------------     
             (get_max_players, ":num_players"),                               
             (try_for_range, ":player_no", 1, ":num_players"),
@@ -1781,7 +1781,7 @@ scene_props = [
             (store_mul, ":target_no_mul_scene_prop_team", ":scene_prop_team_no_multiplier", 2), #2 means destroyed object is a trebuchet
 
             #for only server itself-----------------------------------------------------------------------------------------------                                                                                                      
-            (call_script, "script_show_multiplayer_message", multiplayer_message_type_target_destroyed, ":target_no_mul_scene_prop_team"), 
+            #(call_script, "script_show_multiplayer_message", multiplayer_message_type_target_destroyed, ":target_no_mul_scene_prop_team"),
             #for only server itself-----------------------------------------------------------------------------------------------     
             (get_max_players, ":num_players"),                               
             (try_for_range, ":player_no", 1, ":num_players"),
@@ -1793,7 +1793,7 @@ scene_props = [
             (store_mul, ":target_no_mul_scene_prop_team", ":scene_prop_team_no_multiplier", 9), #9 means attackers destroyed all targets
 
             #for only server itself-----------------------------------------------------------------------------------------------      
-            (call_script, "script_show_multiplayer_message", multiplayer_message_type_target_destroyed, ":target_no_mul_scene_prop_team"), 
+            #(call_script, "script_show_multiplayer_message", multiplayer_message_type_target_destroyed, ":target_no_mul_scene_prop_team"),
             #for only server itself-----------------------------------------------------------------------------------------------     
             (get_max_players, ":num_players"),                                
             (try_for_range, ":player_no", 1, ":num_players"),

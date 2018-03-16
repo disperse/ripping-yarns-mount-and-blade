@@ -22,6 +22,6 @@ public class VertexFactory {
     }
 
     public Vertex createVertex(double x, double y) {
-      return createVertex(x, y, 0.000002);
+      return createVertex(x, y, -0.000002);
     }
 }
